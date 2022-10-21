@@ -1,0 +1,169 @@
+/*===================== GoogleFonts ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap'); /* Fonte: h1, p, fildset, label */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap'); /* Fonte: textarea */
+
+
+/*===========================================================*/
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  background-size: auto 120%;
+  background-attachment: fixed, scroll;
+  
+}
+
+.main{
+  width: 50%;
+  background-image: url(../img/fundo.gif);
+  background-position: center;
+  background-size:cover;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  color: white;
+  border: solid rgb(0, 0, 0);
+  margin-top: 100px;
+  opacity: 90%;
+}
+h1 {
+  letter-spacing: .4rem;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Legion','Multivac','sans-serif';
+}
+fieldset {
+  border: none;
+}
+select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 15px;
+}
+textarea {
+  width: 100%;
+  height: 70px;
+  margin: 10px ;
+  padding: 12px;
+  color: rgb(133, 130, 130);
+  font-weight: bolder;
+  background-color: black;
+  font-size: 15px;
+  border: rgb(98, 133, 98) solid 2px;
+  font-family: 'Source Code Pro', monospace;
+}
+textarea::selection{
+  background-color: white;
+  color: black;
+}
+.keyDiv {
+  background-color: black;
+  float: right;
+  width: 55%;
+  display: none;
+  text-align: center;
+  padding: 15px;
+}
+.keyDiv input {
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  font-size: 15px;
+  text-align: center;
+  background-color: black;
+  color: rgb(133, 130, 130);
+  border: rgb(98, 133, 98) solid 2px;
+  border-radius: 15px;
+}
+#codigo{
+  background-color: black;
+  color: rgb(133, 130, 130);
+  border: rgb(98, 133, 98) solid 2px;
+  width: 44%;
+  text-align: center;
+  border-radius: 15px;
+}
+.codeRadio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 0;
+}
+.divR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btnResult {
+  font-size: 17px;
+  cursor: pointer;
+  background-color: black;
+  color: rgb(133, 130, 130);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: none;
+}
+
+h1, p, fieldset, label {
+  font-family: "Silkscreen";
+}
+
+@media only screen and (min-width: 360px) and (max-width: 960px){
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+#btnResult {
+    border: none;
+  }
+  .codeRadio {
+    display: block;
+  }
+  .main{
+    width: 90%;
+  }
+  .keyDiv{
+    width: 100%;
+  }
+  #codigo{
+    width: 100%;
+  }
+  .keyDiv Input{
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 280px) and (max-width: 320px){
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+#btnResult {
+    border: none;
+  }
+  .codeRadio {
+    display: block;
+  }
+  .main{
+    width: 90%;
+  }
+  .keyDiv{
+    width: 100%;
+  }
+  #codigo{
+    width: 100%;
+  }
+  .keyDiv Input{
+    width: 20%;
+  }
+}
